@@ -29,5 +29,18 @@ data processing principles.
    hadoop jar distributed-data-processing.jar Driver /input/path /output/path
 
 ## Example Input/Output
-Input CSV: id,product,location,category,clicks,sales,other_fields
-Output: category,location    total_sales,total_clicks
+
+**Input CSV line:**
+```
+123,ProductA,New York,Clothing,50,200,...
+```
+
+**Mapper output (key-value pair):**
+```
+Clothing,New York    200,50
+```
+
+**Reducer output (aggregated totals for same category-location):**
+```
+Clothing,New York    totalSales=1234, totalClicks=456
+```
