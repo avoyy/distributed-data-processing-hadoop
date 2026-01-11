@@ -21,8 +21,12 @@ data processing principles.
 1. Compile all Java files:
    ```bash
    javac -cp $(hadoop classpath) *.java
-2. Create a jar file: jar cf distributed-data-processing.jar *.class
-3. Run on Hadoop: hadoop jar distributed-data-processing.jar Driver /input/path /output/path
+2. Create a jar file:
+   ```bash
+   jar cf distributed-data-processing.jar *.class
+4. Run on Hadoop:
+   ```bash
+   hadoop jar distributed-data-processing.jar Driver /input/path /output/path
 
 ## Example Input/Output
 Input CSV: id,product,location,category,clicks,sales,other_fields
