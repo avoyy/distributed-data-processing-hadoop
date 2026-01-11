@@ -1,4 +1,6 @@
-# Distributed Data Processing Project | Hadoop, Java
+# Distributed Data Processing Project (Hadoop MapReduce)
+
+Process large datasets by aggregating advertisement metrics using Hadoop and Java.
 
 ## Description
 This project implements a Hadoop MapReduce job that processes advertisement data.
